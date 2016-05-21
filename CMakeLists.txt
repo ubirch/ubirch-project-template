@@ -13,7 +13,7 @@ add_executable(ubirch-template main.c)
 # link the ubirch firmware (specific for the board)
 target_link_libraries(ubirch-template ubirch::${BOARD}::firmware)
 # create some extra targets for flashing and showing the debug command line
-prepare_flash(ubirch-template)
+prepare_flash(TARGET ubirch-template)
 
 # copy the config.h.template to config.h in case it is not there; it is ignored by .git!
 if (NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/config.h")
