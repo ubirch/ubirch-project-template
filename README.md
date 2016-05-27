@@ -4,15 +4,35 @@ Example project that just blinks the LED. It depends on the [ubirch toolchain](h
 The default code uses the [ubirch#1 r0.2 board](https://gitlab.com/ubirch/ubirch-board-firmware/tree/master/board/ubirch1r02).
 If you want to use a different board, add `-DBOARD=...` to the `cmake` command line below.
 
+## Preparation
+
+Have the [ubirch toolchain](https://gitlab.com/ubirch/ubirch-meta) ready:
+
 ```
-git clone git@gitlab.com:ubirch/ubirch-template.git
-cd ubirch-lights-sensor-arm
+git clone git@gitlab.com:ubirch/ubirch-meta.git
+cd ubirch-meta
+./build.sh -a
+```
+
+## Build example project
+
+Either [download this template](https://gitlab.com/ubirch/ubirch-template/repository/archive.zip?ref=master) or
+check out using git: `git clone git@gitlab.com:ubirch/ubirch-template.git`. Then build using the following commands:
+```
+cd ubirch-template
 mkdir build
 cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE=<ubirch-meta-dir>/ubirch-arm-toolchain/cmake/ubirch-arm-gcc-toolchain.cmake
 make
 make ubirch-template-gdb
 ```
+
+## Configuration
+
+This template also contains code to create a `config.h` file from a template (`config.h.template`). The
+idea is to have an example template that creates the config header which may contain sensitive information.
+In our case, we store APN and username/password info in `config.h` which is protected from being committed to
+the repository in [.gitignore](.gitignore).
 
 ## License
 
