@@ -1,4 +1,4 @@
-# ubirch#1 template
+# ubirch#1 project template
 
 Example project that just blinks the LED. It depends on the [ubirch toolchain](https://github.com/ubirch/ubirch-meta).
 The default code uses the [ubirch#1 r0.2 board](https://github.com/ubirch/ubirch-board-firmware/tree/master/board/ubirch1r02).
@@ -16,8 +16,8 @@ cd ubirch-meta
 
 ## Build example project
 
-Either [download this template](https://github.com/ubirch/ubirch-template/repository/archive.zip?ref=master) or
-check out using git: `git clone git@github.com:ubirch/ubirch-template.git`. Then build using the following commands:
+Either [download this template](https://github.com/ubirch/ubirch-project-template/repository/archive.zip?ref=master) or
+check out using git: `git clone git@github.com:ubirch/ubirch-project-template.git`. Then build using the following commands:
 ```
 cd ubirch-template
 mkdir build
