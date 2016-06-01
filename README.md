@@ -16,7 +16,7 @@ cd ubirch-meta
 
 ## Build example project
 
-Either [download this template](https://github.com/ubirch/ubirch-project-template/repository/archive.zip?ref=master) or
+Either [download this template](https://github.com/ubirch/ubirch-project-template/archive/master.zip) or
 check out using git: `git clone git@github.com:ubirch/ubirch-project-template.git`. Then build using the following commands:
 ```
 cd ubirch-template
