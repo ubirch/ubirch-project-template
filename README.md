@@ -19,7 +19,7 @@ cd ubirch-meta
 Either [download this template](https://github.com/ubirch/ubirch-project-template/archive/master.zip) or
 check out using git: `git clone git@github.com:ubirch/ubirch-project-template.git`. Then build using the following commands:
 ```
-cd ubirch-template
+cd ubirch-project-template
 mkdir build
 cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE=<ubirch-meta-dir>/ubirch-arm-toolchain/cmake/ubirch-arm-gcc-toolchain.cmake
