@@ -1,23 +1,23 @@
 # ubirch#1 template
 
-Example project that just blinks the LED. It depends on the [ubirch toolchain](https://gitlab.com/ubirch/ubirch-meta).
-The default code uses the [ubirch#1 r0.2 board](https://gitlab.com/ubirch/ubirch-board-firmware/tree/master/board/ubirch1r02).
+Example project that just blinks the LED. It depends on the [ubirch toolchain](https://github.com/ubirch/ubirch-meta).
+The default code uses the [ubirch#1 r0.2 board](https://github.com/ubirch/ubirch-board-firmware/tree/master/board/ubirch1r02).
 If you want to use a different board, add `-DBOARD=...` to the `cmake` command line below.
 
 ## Preparation
 
-Have the [ubirch toolchain](https://gitlab.com/ubirch/ubirch-meta) ready:
+Have the [ubirch toolchain](https://github.com/ubirch/ubirch-meta) ready:
 
 ```
-git clone git@gitlab.com:ubirch/ubirch-meta.git
+git clone git@github.com:ubirch/ubirch-meta.git
 cd ubirch-meta
 ./build.sh -a
 ```
 
 ## Build example project
 
-Either [download this template](https://gitlab.com/ubirch/ubirch-template/repository/archive.zip?ref=master) or
-check out using git: `git clone git@gitlab.com:ubirch/ubirch-template.git`. Then build using the following commands:
+Either [download this template](https://github.com/ubirch/ubirch-template/repository/archive.zip?ref=master) or
+check out using git: `git clone git@github.com:ubirch/ubirch-template.git`. Then build using the following commands:
 ```
 cd ubirch-template
 mkdir build
